@@ -104,8 +104,8 @@ header > h1{
 
 footer{
   background-color: white;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
   border-radius: 5px;
 }
