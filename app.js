@@ -13,7 +13,6 @@ const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
 
-//issue
 function usersPlay(userChoice, computerChoice) {
  userChoice;
  computerChoice;
@@ -48,7 +47,7 @@ function playEvaluate(choices, winner) {
   computerScore_span.innerHTML = computerScore;
 
   playerPlay.innerHTML = `<h3>Your Play: ${convertToWord(choices[0])}</h3>`;
-  computerPlay.innerHTML = `<h3>Comp Play: ${convertToWord(choices[1])}</h3>`;
+  computerPlay.innerHTML = `<h3>Computer Play: ${convertToWord(choices[1])}</h3>`;
 
   let message = (winner === 1)? ['beats', 'You win!'] : (winner === -1)? ['loses to', 'You lose!'] : ['equals', "It's a draw"];
   
