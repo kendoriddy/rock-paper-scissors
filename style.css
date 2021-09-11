@@ -124,6 +124,34 @@ footer{
   width: 100%;
   border-radius: 5px;
 }
+.result{
+  font-size: 20px;
+  color: white;
+}
+.result > p{
+  text-align: center;
+  font-weight: lighter;
+  font-family: Asap, sans-serif;
+}
+.choices{
+  margin-top: 10px;
+  text-align: center;
+}
+.moves{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 80%;
+}
+
+.players-move{
+  background-color: rgb(22, 25, 211);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: small;
+}
 }
 
 .green-glow{
