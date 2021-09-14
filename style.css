@@ -24,6 +24,16 @@ header > h1{
   font-family: Asap, sans-serif;
 }
 
+.text h3{
+  color: aliceblue;
+}
+
+.text p{
+  color:rgb(246, 245, 250);
+  text-align: center;
+  margin: auto;
+}
+
 .score-board{
   position: relative;
   margin: 20px auto;
@@ -75,7 +85,7 @@ header > h1{
 
 .choice{
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   margin: 0 20px;
   border: 4px solid white;
   border-radius: 50%;
@@ -83,8 +93,8 @@ header > h1{
 }
 
 .choice img{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -93,13 +103,34 @@ header > h1{
   background: #24272E;
 }
 
+.names{
+  display: inline-block;
+  margin: 0 33px;
+  color: white;
+}
+
 #action-message{
   text-align: center;
   color: white;
   font-family: Asap, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
+}
+
+.moves{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.players-move{
+  background-color: rgb(22, 25, 211);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 footer{
@@ -117,48 +148,64 @@ footer > p{
 }
 
 @media screen and (max-width: 400px) {
-body{
-    background-color: #292C34;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 700px;
+  body{
+      background-color: #292C34;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 700px;
+      width: 100%;
+      /* border: 2px solid green; */
+    }
+    .text h3{
+      color: aliceblue;
+      text-align: center;
+    }
+    
+    .text p{
+      color:rgb(246, 245, 250);
+      text-align: center;
+      margin: auto;
+    }
+  footer{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
   }
-footer{
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-radius: 5px;
-}
-.result{
-  font-size: 20px;
-  color: white;
-}
-.result > p{
-  text-align: center;
-  font-weight: lighter;
-  font-family: Asap, sans-serif;
-}
-.choices{
-  margin-top: 10px;
-  text-align: center;
-}
-.moves{
-  display: flex;
-  align-items: flex-end; 
-  justify-content: space-around;
-  width: 80%;
-}
+  .result{
+    font-size: 20px;
+    color: white;
+  }
+  .result > p{
+    text-align: center;
+    font-weight: lighter;
+    font-family: Asap, sans-serif;
+  }
+  .choices{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .moves{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between; 
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 5px;
+  }
 
-.players-move{
-  background-color: rgb(22, 25, 211);
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: small;
-}
+  .players-move{
+    background-color: rgb(22, 25, 211);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    width: 40%;
+    height: 50px;
+  }
 }
 
 .green-glow{
@@ -174,17 +221,3 @@ footer{
   box-shadow: 0 0 10px #25292b;
 }
 
-.moves{
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  width: 50%;
-}
-
-.players-move{
-  background-color: rgb(22, 25, 211);
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}

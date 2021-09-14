@@ -46,8 +46,8 @@ function playEvaluate(choices, winner) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
 
-  playerPlay.innerHTML = `<h3>Your Play: ${convertToWord(choices[0])}</h3>`;
-  computerPlay.innerHTML = `<h3>Computer's Play: ${convertToWord(choices[1])}</h3>`;
+  playerPlay.innerHTML = `<h3>Your Play: <br> ${convertToWord(choices[0])}</h3>`;
+  computerPlay.innerHTML = `<h3>Computer's Play: <br> ${convertToWord(choices[1])}</h3>`;
 
   let message = (winner === 1)? ['beats', 'You win!'] : (winner === -1)? ['loses to', 'You lose!'] : ['equals', "It's a draw"];
   
