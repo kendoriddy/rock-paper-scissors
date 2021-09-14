@@ -67,6 +67,7 @@ header > h1{
 }
 
 .result{
+  padding: 20px;
   font-size: 40px;
   color: white;
 }
@@ -175,6 +176,7 @@ footer > p{
     border-radius: 5px;
   }
   .result{
+    margin-top: 10px;
     font-size: 20px;
     color: white;
   }
@@ -194,6 +196,7 @@ footer > p{
     justify-content: space-around;
     width: 100%;
     border-radius: 5px;
+    height: 60px;
   }
 
   .players-move{
@@ -204,7 +207,7 @@ footer > p{
     padding: 10px;
     font-size: small;
     width: 40%;
-    height: 50px;
+    height: 60px;
   }
 }
 
