@@ -176,7 +176,6 @@ footer > p{
     border-radius: 5px;
   }
   .result{
-    margin-top: 10px;
     font-size: 20px;
     color: white;
   }
@@ -186,7 +185,7 @@ footer > p{
     font-family: Asap, sans-serif;
   }
   .choices{
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
   }
   .moves{
@@ -207,7 +206,7 @@ footer > p{
     padding: 10px;
     font-size: small;
     width: 40%;
-    height: 60px;
+    height: 65px;
   }
 }
 
